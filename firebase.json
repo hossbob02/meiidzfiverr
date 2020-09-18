@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/iSolarOS",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

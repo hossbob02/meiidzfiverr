@@ -24,7 +24,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/minireset.css/minireset.css",
+              "src/styles.css",
+              "node_modules/igniteui-angular/styles/igniteui-angular.css"
             ],
             "scripts": []
           },
@@ -88,7 +90,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/igniteui-angular/styles/igniteui-angular.css"
             ],
             "scripts": []
           }
@@ -119,6 +122,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "iSolarOS"
+    }
+  },
+  "defaultProject": "iSolarOS",
+  "cli": {
+    "analytics": "49fd25b7-5a5e-49ba-87ee-84d763e0f3de"
+  }
 }

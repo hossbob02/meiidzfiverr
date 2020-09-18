@@ -1,0 +1,60 @@
+
+.body[_ngcontent-ana-c1]{
+    background-image: url(https://isolaros.com/landingbg.8a63015d4ea8c77f027f.jpg);
+    width: 100%;
+    height: 100%;
+    margin-top:0px;
+    display: -webkit-inline-box;
+    position:absolute;
+}
+
+.getstartedtext[_ngcontent-lek-c1] {
+    font-size: 32px;
+}
+.txt-bold{font-weight: 600;}
+.txt-underline[_ngcontent-lek-c1] {
+    text-decoration: underline;
+}
+.txt-bold-italic[_ngcontent-lek-c1] {
+    font-weight: 600;
+    font-style: oblique;
+}
+.txt-divider[_ngcontent-lek-c1] {
+    width: 80%;
+    margin: auto;
+    height: 2px;
+    border-top: 2px dashed #f0b911;
+}
+.btn-getstarted[_ngcontent-lek-c1] {
+    color: #fff;
+    font-weight: 600;
+    background-color: #f0b911;
+    font-size: 34px;
+    box-shadow: 0 0 1px rgba(0,0,0,.1);
+    border: solid rgba(0,0,0,.2);
+    border-width: 2px 2px 3px;
+    border-radius: 15px;
+    padding: 10px 25px!important;
+    margin-right: auto;
+    margin-left: auto;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center!important;
+}
+.btn.focus, .btn:focus, .btn:hover {
+    color: #333;
+    text-decoration: none;
+}
+.btn.active, .btn:active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.button-glow[_ngcontent-lek-c1] {
+    -webkit-animation: glowing 2s infinite;
+    animation: glowing 2s infinite;
+}

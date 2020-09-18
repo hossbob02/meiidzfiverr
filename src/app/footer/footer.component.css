@@ -1,0 +1,22 @@
+.secpageFooter, .secpageFooterP {
+    color: rgba(0,0,0,.4)!important;
+    font-size: 16px!important;
+}
+.footer-content>p {
+    text-align: center;
+    font-size: 10px;
+    color: #0e0e0e;
+    font-weight: 700;
+    font-family: sans-serif!important;
+    line-height: 1.1;
+}
+.secpageFooterP {
+    font-weight: 700!important;
+}
+.secpageFooter, .secpageFooterP {
+    color: rgba(0,0,0,.4)!important;
+    font-size: 16px!important;
+}
+address, figure, p {
+    margin: 0;
+}

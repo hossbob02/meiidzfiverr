@@ -1,0 +1,393 @@
+<main class="site-content" role="main" style="margin-bottom: 20px;" >
+    <div class="">
+        <div class="sec-title text-center m-t-25" style="margin-bottom: 20px;">
+            <h2 class="sectxtone m-b-0">SWITCH TO SOLAR TODAY!</h2>
+            <h2 class="sectxtonefor">FOR $0 DOWN!</h2>
+        </div>
+    </div>
+<br>
+<br>
+    <div class="text-center m-t-15" style="font-size: px;font-weight: bold;">
+
+        <h2 class="sectxtoneicntxt m-b-0">
+            <i class="fa_prepended fa fa-check-circle" contenteditable="false" style="color: rgb(91, 191, 106);"></i> GET YOUR FIRST 6 MONTHS FREE
+        </h2>
+        <h2 class="sectxtoneicntxt m-b-0">
+            <i class="fa_prepended fa fa-check-circle" contenteditable="false" style="color: rgb(91, 191, 106);"></i> IMMEDIATE SAVINGS ON YOUR NEXT Bill
+        </h2>
+    </div>
+    <form class="">
+       <div id="form1" [style.display]="dataForm.form1">
+            <div class="sec-video text-center">
+                <div class="jfCard canMoveAuto" data-type="control_radio" style="max-height: 512px;">
+                    <div class="jfCard-question" style="max-height: 453.906px; overflow-y: auto;">
+                        <div class="formTitle">
+                            <h2 class="rqheading">Do you <strong>own</strong> your home?<span style="color: red;">*</span></h2>
+                            <p>Sorry.. This Program is exclusive for Homeowners Only</p>
+                        </div>
+                        <div>
+                            <div class="login100-formMb" style="width: 100%;">
+                              <!-- <div class="buying-selling-group" data-toggle="buttons" id="buying-selling-group">
+                                    <label class="btn btn-default buying-selling optionmk Mobile-filed" style="vertical-align:middle;">
+                                    <input class="optionmk" name="home_owner"  type="radio" value="Yes" (change)="radiochange($event.target.value)" >
+                                    <span class="radio-dot"></span>
+                                    <span class="buying-selling-word">Yes</span>
+                                    </label>
+
+                                    <label class="btn btn-default buying-selling Mobile-filed">
+                                    <input  class="1" id="checkbox_redirect" name="home_owner"  type="radio" value="No" (change)="radiochange($event.target.value)" >
+                                    <span class="radio-dot"></span>
+                                    <span class="buying-selling-word">No</span>
+                                    </label>
+                                </div>--> 
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="testradio" id=""  value="yes" (change)="handleradioform1($event.target.value)"><label for="" style="color: black;margin-left: 10px;margin-top: 11px;">YES</label> 
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" name="testradio" id="" value="no" (change)="handleradioform1($event.target.value)"><label for="" style="color: black;margin-left: 10px;margin-top: 11px;">NO</label> 
+                                </div>
+                                <div class="alert alert-danger" *ngIf="dataRequered.messageErrform1">{{dataRequered.messageErrform1}}</div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottomBtn">
+                        <div class="form-error-message">This field is required.</div>
+                        <button class="cirnextbtn" type="submit" (click)="next1()"><i class="fa fa-arrow-right"></i> Next</button>
+                        <button class="btn-left hide" id="prebtn" (click)="redirectto()"><i class="fa fa-arrow-left"></i> Previous</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="form2" [style.display]="dataForm.form2">
+            <div class="sec-video text-center">
+                <div class="jfCard canMoveAuto wow animated bounceInRight animated" data-type="control_radio" style="max-height: 512px;">
+                    <div class="jfCard-question" style="max-height: 453.906px; overflow-y: auto;">
+                        <div class="formTitle">
+                            <h2 class="rqheading">What is your <strong>average monthly electric bill?</strong><span style="color: red;">*</span></h2>
+                        </div>
+                        <div class="">
+                            <div class="login100-formMb validate-form m-t-35" style="width: 100%; text-align: left;">
+                               <!-- <div class="buying-selling-group" data-toggle="buttons" id="buying-selling-group">
+                                    <label class="btn btn-default buying-selling Mobile-filed optionmk2" style="width: 31.33%">
+                                    <input autocomplete="off" class="secformck" (change)="handleradioform2($event.target.value)" name="utility_bill" type="radio" value="$50-$75">
+                                    <span class="radio-dot"></span>
+                                    <span class="buying-selling-word">$50-$75</span>
+                                </label>
+
+                                    <label class="btn btn-default buying-selling Mobile-filed optionmk2" style="width: 31.33%">
+                                    <input autocomplete="off" class="secformck" (change)="handleradioform2($event.target.value)" name="utility_bill" type="radio" value="$75-$150">
+                                    <span class="radio-dot"></span>
+                                    <span class="buying-selling-word">$75-$150</span>
+                                </label>
+
+                                    <label class="btn btn-default buying-selling Mobile-filed optionmk2" style="width: 31.33%">
+                                    <input autocomplete="off" class="secformck" name="utility_bill" type="radio" value="$150-$270">
+                                    <span class="radio-dot"></span>
+                                    <span class="buying-selling-word">$150-$270</span>
+                                </label>
+                                    <label class="btn btn-default buying-selling Mobile-filed optionmk2" style="width: 31.33%; margin-top: 10px;">
+                                    <input autocomplete="off" class="secformck" name="utility_bill" type="radio" value="$270-$400">
+                                    <span class="radio-dot"></span>
+                                    <span class="buying-selling-word">$270-$400</span>
+                                </label>
+
+                                    <label class="btn btn-default buying-selling Mobile-filed optionmk2" style="width: 31.33%; margin-top: 10px;">
+                                    <input autocomplete="off" class="secformck" name="utility_bill" type="radio" value="$400+">
+                                    <span class="radio-dot"></span>
+                                    <span class="buying-selling-word">$400+</span>
+                                </label>
+                                </div>-->
+                                <div class="form-check form-check-inline" style="margin-left: 31px;">
+                                    <input type="radio" name="testradio" id=""  value="$50-$75" (change)="handleradioform2($event.target.value)"><label for="" style="color: black;margin-left: 10px;margin-top: 11px;">$50-$75</label> 
+                                </div>
+                                <div class="form-check form-check-inline" style="margin-left: 31px;">
+                                    <input type="radio" name="testradio" id="" value="$75-$150" (change)="handleradioform2($event.target.value)"><label for="" style="color: black;margin-left: 10px;margin-top: 11px;">$75-$150</label> 
+                                </div>
+                                <div class="form-check form-check-inline" style="margin-left: 31px;">
+                                    <input type="radio" name="testradio" id=""  value="$150-$270" (change)="handleradioform2($event.target.value)"><label for="" style="color: black;margin-left: 10px;margin-top: 11px;">$150-$270</label> 
+                                </div>
+                                <div class="form-check form-check-inline" style="margin-left: 31px;">
+                                    <input type="radio" name="testradio" id="" value="$270-$400" (change)="handleradioform2($event.target.value)"><label for="" style="color: black;margin-left: 10px;margin-top: 11px;">$270-$400</label> 
+                                </div>
+                                <div class="form-check form-check-inline" style="margin-left: 31px;">
+                                    <input type="radio" name="testradio" id="" value="$400+" (change)="handleradioform2($event.target.value)"><label for="" style="color: black;margin-left: 10px;margin-top: 11px;">$400+</label> 
+                                </div>
+                                <div class="alert alert-danger" *ngIf="dataRequered.messageErrform2">{{dataRequered.messageErrform2}}</div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottomBtn">
+                        <div class="form-error-message">This field is required.</div>
+                        <button class="btn-right" id="nextbtn2" (click)="next2()">Next <i class="fa fa-arrow-right"></i></button>
+                        <button class="btn-left" id="prebtn2" (click)="redirectto2()"><i class="fa fa-arrow-left"></i> Previous</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="form3" [style.display]="dataForm.form3">
+            <div class="sec-video text-center">
+                <div class="jfCard canMoveAuto wow animated bounceInRight animated" data-type="control_radio" style="max-height: 512px;">
+                    <div class="jfCard-question" style="max-height: 453.906px; overflow-y: auto;">
+                        <div class="formTitle">
+                            <h2 class="rqheading">What is your <strong>credit score range?</strong><span style="color: red;">*</span></h2>
+                            <p>Just a ball park guess is fine.. $0 down financing Pre-Approval Check:</p>
+                        </div>
+                        <div class="">
+                            <div class="login100-formMb validate-form m-t-35" style="width: 100%;">
+                              <!-- <div class="buying-selling-group" data-toggle="buttons" id="buying-selling-group">
+                                    <label class="btn btn-default buying-selling Mobile-filed optionmk3">
+                                    <input autocomplete="off" class="thrdfrmck" name="credit_estimate" type="radio" value="Excellent">
+                                    <span class="radio-dot"></span>
+                                    <span class="buying-selling-word">Excellent</span>
+                                    </label>
+
+                                    <label class="btn btn-default buying-selling Mobile-filed optionmk3">
+                                    <input autocomplete="off" class="thrdfrmck" name="credit_estimate" type="radio" value="above-average">
+                                    <span class="radio-dot"></span>
+                                    <span class="buying-selling-word">Above-Average</span>
+                                    </label>
+                                    <div class="buying-selling-group" data-toggle="buttons" id="buying-selling-group" style="margin-top: 10px;">
+                                        <label class="btn btn-default buying-selling optionmk3 Mobile-filed">
+                                        <input autocomplete="off" class="thrdfrmck" name="credit_estimate" type="radio" value="average">
+                                        <span class="radio-dot"></span>
+                                        <span class="buying-selling-word">Average</span>
+                                    </label>
+
+                                        <label class="btn btn-default buying-selling optionmk3 Mobile-filed">
+                                        <input autocomplete="off" class="thrdfrmck" name="credit_estimate" type="radio" value="below-average">
+                                        <span class="radio-dot"></span>
+                                        <span class="buying-selling-word">Below-Average (Below 600)</span>
+                                    </label>
+                                    </div>
+                                </div> -->
+                                   <!--average start here-->
+                                   <div class="form-check form-check-inline" style="margin-left: 31px;">
+                                    <input type="radio" name="testradio2" id=""  value="Excellent" (change)="handleradioform3($event.target.value)"><label for="" style="color: black;margin-left: 10px;margin-top: 11px;">Excellent</label> 
+                                </div>
+                                <div class="form-check form-check-inline" style="margin-left: 31px;">
+                                    <input type="radio" name="testradio2" id="" value="Above-Average" (change)="handleradioform3($event.target.value)"><label for="" style="color: black;margin-left: 10px;margin-top: 11px;">Above-Average</label> 
+                                </div>
+                                <div class="form-check form-check-inline" style="margin-left: 31px;">
+                                    <input type="radio" name="testradio2" id=""  value="Average" (change)="handleradioform3($event.target.value)"><label for="" style="color: black;margin-left: 10px;margin-top: 11px;">Average</label> 
+                                </div>
+                                <div class="form-check form-check-inline" style="margin-left: 31px;">
+                                    <input type="radio" name="testradio2" id="" value="Below-Average" (change)="handleradioform3($event.target.value)"><label for="" style="color: black;margin-left: 10px;margin-top: 11px;">Below-Average</label> 
+                                </div>
+                                <div class="alert alert-danger" *ngIf="dataRequered.messageErrform3">{{dataRequered.messageErrform3}}</div>
+
+                                   <!--average end here-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottomBtn">
+                        <div class="form-error-message">This field is required.</div>
+                        <button class="btn-right" id="nextbtn3" (click)="next3()">Next <i class="fa fa-arrow-right"></i></button>
+                        <button class="btn-left" id="prebtn3" (click)="redirectto3()"><i class="fa fa-arrow-left"></i> Previous</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="form4" [style.display]="dataForm.form4">
+            <div class="sec-video text-center">
+                <div class="jfCard canMoveAuto wow animated bounceInRight animated" data-type="control_radio" style="max-height: 512px;">
+                    <div class="jfCard-question" style="max-height: 453.906px; overflow-y: auto;">
+                        <div class="formTitle">
+                            <h2 class="rqheading">What's your name, stranger?<span style="color: red;">*</span></h2>
+
+                        </div>
+                        <div>
+                            <div class="login100-formMb validate-form m-t-35" id="basic-form" style="width: 100%;">
+                               <!-- <div class="buying-selling-group" data-toggle="buttons" id="buying-selling-group">
+                                    <label class="btn btn-default buying-selling Mobile-filed" style="text-align: left;background: transparent!important;"> 
+                                    <input autocomplete="off" class="buying-selling-word ng-untouched ng-pristine ng-invalid" formcontrolname="first_name" id="first-name" placeholder="First name" type="text" name="name" ([ngModel])="dataName.name" required="" style="margin: 0;">
+                                    
+                                    
+                                </label>
+
+                                    <label class="btn btn-default buying-selling Mobile-filed" style="text-align: left;background: transparent!important;">
+                                    <input autocomplete="off" class="buying-selling-word ng-untouched ng-pristine ng-invalid" formcontrolname="last_name" id="last-name" placeholder="Last name" type="text" ([ngModel])="dataName.last"  name="last" required="" style="margin: 0;">
+                                    
+                                    
+                                </label>
+                                </div>-->
+                                <div class="row">
+                                    <div class="col">
+                                      <input type="text" class="form-control" placeholder="First name" id="validationCustom01" required name="firstname" style="color: black;" (change)="handleTestName($event.target.value)">
+                                    </div>
+                                    <div class="col">
+                                      <input type="text" class="form-control" placeholder="Last name" id="validationCustom01" required name="lastname" style="color: black;" (change)="handleTestLast($event.target.value)">
+                                    </div>
+                                  </div>
+                                  <div class="alert alert-danger" *ngIf="dataRequered.messageErrName">{{dataRequered.messageErrName}}</div>
+                                  <div class="alert alert-danger" *ngIf="dataRequered.messageErrLast">{{dataRequered.messageErrLast}}</div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottomBtn">
+
+                        <div class="form-error-message-name">Type Alphabets Only.</div>
+                        <button class="btn-right" id="nextbtn4" type="button" (click)="next4()">Next <i class="fa fa-arrow-right"></i></button>
+                        <button class="btn-left" id="prebtn4" (click)="redirectto4()"><i class="fa fa-arrow-left"></i> Previous</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="form5" [style.display]="dataForm.form5">
+            <div class="sec-video text-center">
+                <div class="jfCard canMoveAuto wow animated bounceInRight animated" data-type="control_radio" style="max-height: 512px;">
+                    <div class="jfCard-question" style="max-height: 453.906px; overflow-y: auto;">
+                        <div class="formTitle">
+                            <h2 class="rqheading">What is your address ?<span style="color: red;">*</span></h2>
+                            <p>We use satellite imaging to place panels in the most efficient layout on your roof , not all roofs qualify.
+                            </p>
+                        </div>
+                        <div class="">
+                            <div class="login100-formMb validate-form m-t-35" style="width: 100%;">
+                               <!-- <div class="buying-selling-group" data-toggle="buttons" id="buying-selling-group">
+                                    <label class="btn btn-default buying-selling" style="text-align: left;background: transparent!important; width: 100%;">
+                                    <input class="forminputs validate-input pac-target-input" id="formiadd" ngx-google-places-autocomplete="" placeholder="Street Address" required="" style="margin: 0;" type="text" autocomplete="off">
+                                </label>
+                                </div>-->
+                                <div class="row">
+                                    <div class="col">
+                                      <input type="text" class="form-control" placeholder="Address" id="validationCustom01" required style="color: black;" (change)="handleTestaddress($event.target.value)">
+                                    </div>
+                                </div>
+                                <div class="alert alert-danger" *ngIf="dataRequered.messageErrAddress">{{dataRequered.messageErrAddress}}</div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottomBtn">
+                        <div class="form-error-message">This field is required.</div>
+                        <button class="btn-right" id="nextbtn5" type="button" (click)="next5()">Next <i class="fa fa-arrow-right"></i></button>
+                        <button class="btn-left" id="prebtn5" (click)="redirectto5()"><i class="fa fa-arrow-left"></i> Previous</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="form6" [style.display]="dataForm.form6">
+            <div class="sec-video text-center">
+                <div class="jfCard canMoveAuto wow animated bounceInRight animated" data-type="control_radio" style="max-height: 512px;">
+                    <div class="jfCard-question" style="max-height: 453.906px; overflow-y: auto;">
+                        <div class="formTitle">
+                            <h2 class="rqheading">What email should we use to <strong>send your solar qualification result?</strong><span style="color: red;">*</span></h2>
+
+                        </div>
+                        <div class="">
+                            <div class="login100-formMb validate-form m-t-35" style="width: 100%;">
+                               <!-- <div class="buying-selling-group" data-toggle="buttons" id="buying-selling-group">
+                                    <label class="btn btn-default buying-selling" style="text-align: left;background: transparent!important; width: 100%;">
+                                    <input autocomplete="off" class="buying-selling-word validate-input ng-untouched ng-pristine ng-invalid" formcontrolname="email" id="frmEmail" placeholder="example@youremail.com" style="margin: 0;" type="text">
+                                </label>
+                                </div>-->
+                                <div class="row">
+                                    <div class="col">
+                                      <input type="email" class="form-control" placeholder="Example@email.com" id="validationCustom01" required email style="color: black;" (change)="handleTestEmail($event.target.value)">
+                                    </div>
+                                </div>
+                                <div class="alert alert-danger" *ngIf="dataRequered.messageErrEmail">{{dataRequered.messageErrEmail}}</div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottomBtn">
+                        <div class="form-error-message">This field is required.</div>
+                        <div class="form-error-message-email">Type valid email</div>
+                        <button class="btn-right" id="nextbtn6" type="button" (click)="next6()">Next <i class="fa fa-arrow-right"></i></button>
+                        <button class="btn-left disable" id="prebtn6" (click)="redirectto6()"><i class="fa fa-arrow-left"></i> Previous</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="form7" [style.display]="dataForm.form7">
+            <div class="sec-video text-center">
+                <div class="jfCard canMoveAuto wow animated bounceInRight animated" data-type="control_radio" style="max-height: 512px;">
+                    <div class="jfCard-question" style="max-height: 453.906px; overflow-y: auto;">
+                        <div class="formTitle">
+                            <h2 class="rqheading">What is the <strong>best number to contact you?</strong><span style="color: red;">*</span></h2>
+                            <p>We wont share your information with anyone 🔐</p>
+                        </div>
+                        <div class="">
+                            <div class="login100-formMb validate-form m-t-35" style="width: 100%;">
+                               <!-- <div class="row buying-selling-group" data-toggle="buttons" id="buying-selling-group">
+                                    <div class="col-4" style="padding: 0 8px 0 0 !important;">
+                                        <label class="btn btn-default buying-selling1 Mobile-filed" style="text-align: left;background: transparent!important;">
+                                        <input class="buying-selling-word validate-input ng-untouched ng-pristine ng-invalid" formcontrolname="area_code" id="areacode" placeholder="Area Code" required="" style="margin: 0; box-sizing: border-box; width: 100%;" type="number">
+                                         </label>
+                                    </div>
+                                    
+                                    <div class="col-8" style="padding: 0 0 0 8px !important;">
+                                        <label class="btn btn-default buying-selling Mobile-filed" style="text-align: left;background: transparent!important; width: 100%;">
+                                        <input autocomplete="off" class="buying-selling-word validate-input ng-untouched ng-pristine ng-invalid" formcontrolname="contact_number" id="option2" placeholder="Phone Number" required="" style="margin: 0;" type="number">                            
+                                        </label>
+                                    </div>
+                                </div>-->
+                                <div class="row">
+                                    <div class="col">
+                                      <input type="text" class="form-control" placeholder="Area Code" id="validationCustom01"  name="area" style="color: black;" (change)="handleTestArea($event.target.value)">
+                                    </div>
+                                    <div class="col">
+                                      <input type="text" class="form-control" placeholder="Phone Number" id="validationCustom01" name="phone" style="color: black;" (change)="handleTestPhone($event.target.value)">
+                                    </div>
+                                </div>
+                                <div class="alert alert-danger" *ngIf="dataRequered.messageErrArea">{{dataRequered.messageErrArea}}</div>
+                                <div class="alert alert-danger" *ngIf="dataRequered.messageErrPhone">{{dataRequered.messageErrPhone}}</div>
+
+                            </div>
+                        </div>
+                    </div>                        
+                    
+
+                    
+                    <div class="bottomBtn">
+                        <div class="form-error-message">This field is required.</div>
+                        <button class="btn-right" id="finalSubmit" (click)="next7()" type="submit">Submit</button>
+                        <button class="btn-left" id="prebtn7" (click)="redirectto7()"><i class="fa fa-arrow-left"></i> Previous</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </form>
+    <div class="steps-form">
+        <div class="steps-row setup-panel">
+            <div check="1" class="steps-step" style="padding-left: 4px;">
+                <a class="btn btn-indigo btn-circle cirnextbtn cirnextbtn1 " href="#" id="cirprebtn" type="button"></a>
+
+            </div>
+            <div check="2" class="steps-step">
+                <a class="btn btn-default btn-circle cirnextbtn cirnextbtn2 activecoloer" href="#" id="cirnextbtn" type="button"></a>
+
+            </div>
+            <div check="3" class="steps-step">
+                <a class="btn btn-default btn-circle cirnextbtn cirnextbtn3" href="#" type="button"></a>
+            </div>
+            <div check="4" class="steps-step">
+                <a class="btn btn-indigo btn-circle cirnextbtn cirnextbtn4" href="#" type="button"></a>
+
+            </div>
+            <div check="5" class="steps-step">
+                <a class="btn btn-default btn-circle cirnextbtn cirnextbtn5" href="#" type="button"></a>
+
+            </div>
+            <div check="6" class="steps-step">
+                <a class="btn btn-default btn-circle cirnextbtn cirnextbtn6" href="#" type="button"></a>
+            </div>
+            <div check="7" class="steps-step" style="padding-right: 4px;">
+                <a class="btn btn-default btn-circle cirnextbtn cirnextbtn7" href="#" type="button"></a>
+            </div>
+        </div>
+    </div>
+</main>
