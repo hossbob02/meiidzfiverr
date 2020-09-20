@@ -10,29 +10,28 @@ import { AppointmentComponent } from './appointment/appointment.component';
 const routes: Routes = [
   {path:'getting-started',component:LandingComponent},
   { path: '',   redirectTo: '/getting-started', pathMatch: 'full' },
-  {
-    path:'getting-started',
-  children: [
+  
+  
     {
-      path: 'appointment-confirmed',
+      path: 'getting-started/appointment-confirmed',
       component: AppointmentConfirmedComponent, 
     },
     {
-      path: 'not-qualified',
+      path: 'getting-started/not-qualified',
       component: NotQualifiedComponent,
     },
     {
-      path: 'appointment',
+      path: 'getting-started/appointment',
       component: AppointmentComponent,
     },
     {
-      path:'survey',
+      path:'getting-started/survey',
       component:SurveyComponent
     }
     
-  ],
+
   
-},
+
   
   
 ];

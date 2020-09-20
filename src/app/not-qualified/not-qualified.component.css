@@ -6,3 +6,22 @@
     margin-top: -5px;
     padding-top: 1;
 }
+
+.btnReturnLastPage {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    text-align: center;
+    background: #5bbf6a;
+    color: white;
+    font-size: 23px;
+    width: 313px;
+    height: 40px;
+    padding-top: 5px;
+    border-radius: 20px;
+}
+
+.btnReturnLastPage:hover{
+    color:white;
+    background: tomato;
+}

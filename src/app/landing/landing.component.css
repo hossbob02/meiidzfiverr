@@ -58,3 +58,22 @@
     -webkit-animation: glowing 2s infinite;
     animation: glowing 2s infinite;
 }
+.secpageFooter, .secpageFooterP {
+    font-size: 16px!important;
+}
+.footer-content>p {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: sans-serif!important;
+    line-height: 1.1;
+}
+.secpageFooterP {
+    font-weight: 700!important;
+}
+.secpageFooter, .secpageFooterP {
+    font-size: 16px!important;
+}
+address, figure, p {
+    margin: 0;
+}

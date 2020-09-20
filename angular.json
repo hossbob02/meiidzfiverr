@@ -25,8 +25,9 @@
             ],
             "styles": [
               "node_modules/minireset.css/minireset.css",
-              "src/styles.css",
-              "node_modules/igniteui-angular/styles/igniteui-angular.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",         
+              "src/styles.css"
             ],
             "scripts": []
           },

@@ -1,7 +1,7 @@
 <body id="body">
     
     <div class="site-content">
-        <div _ngcontent-qjg-c1="" class="desktop-view">
+        <div _ngcontent-qjg-c1="" class="desktop-view" *ngIf="!isMobileResolution">
             <div _ngcontent-qjg-c1="" class="">
                 <div _ngcontent-qjg-c1="" class="apSec-title text-center">
                     <h2 _ngcontent-qjg-c1="" class="aptxtone">Almost Done... </h2>
@@ -27,28 +27,28 @@
                                 <tr _ngcontent-qjg-c1="" style="background: #f9f9f9; border-bottom: none">
                                     <th _ngcontent-qjg-c1="">
                                         <span _ngcontent-qjg-c1="" style="font-size: 12px;">THIS WEEK</span><br _ngcontent-qjg-c1="">
-                                        <span _ngcontent-qjg-c1="" class="daysspan">Friday</span><br _ngcontent-qjg-c1=""> Sep 18
+                                        <span _ngcontent-qjg-c1="" class="daysspan">{{dataDay.day1}}</span><br _ngcontent-qjg-c1=""> {{nameDay.day1}}
                                         
                                     </th>
 
                                     <th _ngcontent-qjg-c1="" class="th-lg">
-                                        <span _ngcontent-qjg-c1="" class="daysspan">Saturday</span><br _ngcontent-qjg-c1=""> Sep 19
+                                        <span _ngcontent-qjg-c1="" class="daysspan">{{dataDay.day2}}</span><br _ngcontent-qjg-c1=""> {{nameDay.day2}}
                                     </th>
 
                                     <th _ngcontent-qjg-c1="" class="th-lg">
-                                        <span _ngcontent-qjg-c1="" class="daysspan">Sunday</span><br _ngcontent-qjg-c1=""> Sep 20
+                                        <span _ngcontent-qjg-c1="" class="daysspan">{{dataDay.day3}}</span><br _ngcontent-qjg-c1=""> {{nameDay.day3}}
                                     </th>
 
                                     <th _ngcontent-qjg-c1="" class="th-lg">
-                                        <span _ngcontent-qjg-c1="" class="daysspan">Monday</span><br _ngcontent-qjg-c1=""> Sep 21
+                                        <span _ngcontent-qjg-c1="" class="daysspan">{{dataDay.day4}}</span><br _ngcontent-qjg-c1=""> {{nameDay.day4}}
                                     </th>
 
                                     <th _ngcontent-qjg-c1="" class="th-lg">
 
                                         <span _ngcontent-qjg-c1="" class="daysspan">
-                                   Tuesday
+                                            {{dataDay.day5}}
                                    
-                                </span><br _ngcontent-qjg-c1=""> Sep 22
+                                </span><br _ngcontent-qjg-c1=""> {{nameDay.day5}}
                                     </th>
                                 </tr>
                             </thead>
@@ -58,80 +58,80 @@
                             <tbody _ngcontent-qjg-c1="">
                                 <tr _ngcontent-qjg-c1="">
                                     <!----><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="9:00 AM Friday" class="table-border">9:00 AM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="9:00 AM {{nameDay.day1}}" class="table-border">9:00 AM</button>
                                     </td><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="9:00 AM Saturday" class="table-border">9:00 AM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="9:00 AM {{nameDay.day2}}" class="table-border">9:00 AM</button>
                                     </td><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="9:00 AM Sunday" class="table-border">9:00 AM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="9:00 AM {{nameDay.day3}}" class="table-border">9:00 AM</button>
                                     </td><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="9:00 AM Monday" class="table-border">9:00 AM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="9:00 AM {{nameDay.day4}}" class="table-border">9:00 AM</button>
                                     </td><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="9:00 AM Tuesday" class="table-border">9:00 AM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="9:00 AM {{nameDay.day5}}" class="table-border">9:00 AM</button>
                                     </td>
                                 </tr>
                                 <tr _ngcontent-qjg-c1="">
                                     <!----><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="11:00 AM Friday" class="table-border">11:00 AM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="11:00 AM {{nameDay.day1}}" class="table-border">11:00 AM</button>
                                     </td><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="11:00 AM Saturday" class="table-border">11:00 AM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="11:00 AM {{nameDay.day2}}" class="table-border">11:00 AM</button>
                                     </td><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="11:00 AM Sunday" class="table-border">11:00 AM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="11:00 AM {{nameDay.day3}}" class="table-border">11:00 AM</button>
                                     </td><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)"  value="11:00 AM Monday" class="table-border">11:00 AM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)"  value="11:00 AM {{nameDay.day4}}" class="table-border">11:00 AM</button>
                                     </td><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="11:00 AM Tuesday" class="table-border">11:00 AM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="11:00 AM {{nameDay.day5}}" class="table-border">11:00 AM</button>
                                     </td>
                                 </tr>
                                 <tr _ngcontent-qjg-c1="">
                                     <!----><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="1:00 PM Friday" class="table-border">1:00 PM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="1:00 PM {{nameDay.day1}}" class="table-border">1:00 PM</button>
                                     </td><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="1:00 PM Saturday" class="table-border">1:00 PM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="1:00 PM {{nameDay.day2}}" class="table-border">1:00 PM</button>
                                     </td><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)"  value="1:00 PM Sunday" class="table-border">1:00 PM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)"  value="1:00 PM {{nameDay.day3}}" class="table-border">1:00 PM</button>
                                     </td><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="1:00 PM Monday" class="table-border">1:00 PM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="1:00 PM {{nameDay.day4}}" class="table-border">1:00 PM</button>
                                     </td><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="1:00 PM Tuesday" class="table-border">1:00 PM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="1:00 PM {{nameDay.day5}}" class="table-border">1:00 PM</button>
                                     </td>
                                 </tr>
                                 <tr _ngcontent-qjg-c1="">
                                     <!----><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="3:00 PM Friday" class="table-border">3:00 PM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="3:00 PM {{nameDay.day1}}" class="table-border">3:00 PM</button>
                                     </td><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="3:00 PM Saturday" class="table-border">3:00 PM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="3:00 PM {{nameDay.day2}}" class="table-border">3:00 PM</button>
                                     </td><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="3:00 PM Sunday" class="table-border">3:00 PM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="3:00 PM {{nameDay.day3}}" class="table-border">3:00 PM</button>
                                     </td><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="3:00 PM Monday" class="table-border">3:00 PM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="3:00 PM {{nameDay.day4}}" class="table-border">3:00 PM</button>
                                     </td><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="3:00 PM Tuesday" class="table-border">3:00 PM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="3:00 PM {{nameDay.day5}}" class="table-border">3:00 PM</button>
                                     </td>
                                 </tr>
                                 <tr _ngcontent-qjg-c1="">
                                     <!----><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="5:00 PM Friday" class="table-border">5:00 PM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="5:00 PM {{nameDay.day1}}" class="table-border">5:00 PM</button>
                                     </td><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="5:00 PM Saturday" class="table-border">5:00 PM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="5:00 PM {{nameDay.day2}}" class="table-border">5:00 PM</button>
                                     </td><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="5:00 PM Sunday" class="table-border">5:00 PM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="5:00 PM {{nameDay.day3}}" class="table-border">5:00 PM</button>
                                     </td><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="5:00 PM Monday" class="table-border">5:00 PM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="5:00 PM {{nameDay.day4}}" class="table-border">5:00 PM</button>
                                     </td><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="5:00 PM Tuesday" class="table-border">5:00 PM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="5:00 PM {{nameDay.day5}}" class="table-border">5:00 PM</button>
                                     </td>
                                 </tr>
                                 <tr _ngcontent-qjg-c1="">
                                     <!----><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="7:00 PM Friday" class="table-border">7:00 PM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="7:00 PM {{nameDay.day1}}" class="table-border">7:00 PM</button>
                                     </td><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="7:00 PM Saturday" class="table-border">7:00 PM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="7:00 PM {{nameDay.day2}}" class="table-border">7:00 PM</button>
                                     </td><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="7:00 PM Sunday" class="table-border">7:00 PM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="7:00 PM {{nameDay.day3}}" class="table-border">7:00 PM</button>
                                     </td><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="7:00 PM Monday" class="table-border">7:00 PM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="7:00 PM {{nameDay.day4}}" class="table-border">7:00 PM</button>
                                     </td><td _ngcontent-qjg-c1="" scope="row" class="ng-star-inserted">
-                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="7:00 PM Tuesday" class="table-border">7:00 PM</button>
+                                        <button _ngcontent-qjg-c1="" (click)="show($event.target.value)" value="7:00 PM {{nameDay.day5}}" class="table-border">7:00 PM</button>
                                     </td>
                                 </tr>
                             </tbody>
@@ -139,6 +139,76 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div _ngcontent-qjg-c1="" class="mobile-view" *ngIf="isMobileResolution">
+
+                    
+  
+                        <!--mobile-->
+                        
+
+
+
+
+						<div _ngcontent-fvw-c1="" class="text-left">
+                            <div _ngcontent-fvw-c1="" class="text-left">
+                                <i _ngcontent-fvw-c1="" class="fa fa-arrow-left" routerLink="/getting-started/survey" style="color: limegreen; size: 40px;" tabindex="0"></i>
+                                <h5 _ngcontent-fvw-c1="">Choose Appointment</h5>
+                                <h6 _ngcontent-fvw-c1="" style="color: limegreen;">Consultation</h6>
+                                <p _ngcontent-fvw-c1="" style="padding:0;margin: 0; color: lightgrey;">30 Minutes</p>
+                                
+                            </div>      
+                        </div>
+                        <br>
+
+                        <div class="container">
+                            <div class="row">
+                            <div class="col-xs-12 col-12 col-md-4 form-group">
+                            <form>
+                                <input type="date" placeholder="Datepicker" name="date" [(ngModel)]="data.date" class="form-control"  />
+                           </form>
+                            </div>
+                            </div>
+                        </div>
+                        <br>
+                                    <div _ngcontent-fvw-c1="" style="    text-align: center;">
+                                        <div class="custom-control custom-radio custom-control-inline timetest">
+                                            <input type="radio" id="customRadioInline1" value="09:00 AM" (change)="getTime($event.target.value)" name="customRadioInline1" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline1">09:00 AM</label>
+                                          </div>
+                                          <div class="custom-control custom-radio custom-control-inline timetest" >
+                                            <input type="radio" id="customRadioInline2" value="11:00 AM" (change)="getTime($event.target.value)" name="customRadioInline1" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline2">11:00 AM</label>
+                                          </div>
+                                          <div class="custom-control custom-radio custom-control-inline timetest" >
+                                            <input type="radio" id="customRadioInline3" value="01:00 PM" (change)="getTime($event.target.value)" name="customRadioInline1" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline3">01:00 PM</label>
+                                          </div>
+                                          <div class="custom-control custom-radio custom-control-inline timetest" >
+                                            <input type="radio" id="customRadioInline4" value="03:00 PM" (change)="getTime($event.target.value)" name="customRadioInline1" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline4">03:00 PM</label>
+                                          </div>
+                                          <div class="custom-control custom-radio custom-control-inline timetest" >
+                                            <input type="radio" id="customRadioInline5" value="05:00 PM" (change)="getTime($event.target.value)" name="customRadioInline1" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline5">05:00 PM</label>
+                                          </div>
+                                          <div class="custom-control custom-radio custom-control-inline timetest" >
+                                            <input type="radio" id="customRadioInline6" value="07:00 PM" (change)="getTime($event.target.value)" name="customRadioInline1" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline6">07:00 PM</label>
+                                          </div>
+                                          
+                                          <div class="alert alert-danger" *ngIf="dataMessage.dateErr">{{dataMessage.dateErr}}</div>
+                                          <div class="alert alert-danger" *ngIf="dataMessage.timeErr">{{dataMessage.timeErr}}</div>
+
+                                    
+                                    </div>
+                     
+                                    <div _ngcontent-fvw-c1="" style="background-color: limegreen; width: 70%; margin-left: 10%;margin-right: 20%;margin-top: 20px; height: 40px; border-radius: 20px;"> 
+                                        <button _ngcontent-fvw-c1="" (click)="verrifandgo()" style="text-align: center;padding-left: 25%;color: white;margin-top: 5px;">Book An Appointment</button>
+                                    </div>       
+                
+                        <!--mobile-->
+            
         </div>
         
     </div>

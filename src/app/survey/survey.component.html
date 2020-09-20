@@ -12,7 +12,7 @@
         <h2 class="sectxtoneicntxt m-b-0">
             <i class="fa_prepended fa fa-check-circle" contenteditable="false" style="color: rgb(91, 191, 106);"></i> GET YOUR FIRST 6 MONTHS FREE
         </h2>
-        <h2 class="sectxtoneicntxt m-b-0">
+        <h2 class="sectxtoneicntxt m-b-0 sectxt2">
             <i class="fa_prepended fa fa-check-circle" contenteditable="false" style="color: rgb(91, 191, 106);"></i> IMMEDIATE SAVINGS ON YOUR NEXT Bill
         </h2>
     </div>
@@ -40,11 +40,11 @@
                                     <span class="buying-selling-word">No</span>
                                     </label>
                                 </div>--> 
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" name="testradio" id=""  value="yes" (change)="handleradioform1($event.target.value)"><label for="" style="color: black;margin-left: 10px;margin-top: 11px;">YES</label> 
+                                <div class="form-check form-check-inline inputyesno">
+                                    <input type="radio" name="testradio" id="customRadioInline1" value="yes" (change)="handleradioform1($event.target.value)"><label for="customRadioInline1" style="color: black;margin-left: 10px;margin-top: 11px;">YES</label> 
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" name="testradio" id="" value="no" (change)="handleradioform1($event.target.value)"><label for="" style="color: black;margin-left: 10px;margin-top: 11px;">NO</label> 
+                                <div class="form-check form-check-inline inputyesno">
+                                    <input type="radio" name="testradio" id="customRadioInline2" value="no" (change)="handleradioform1($event.target.value)"><label for="customRadioInline2" style="color: black;margin-left: 10px;margin-top: 11px;">NO</label> 
                                 </div>
                                 <div class="alert alert-danger" *ngIf="dataRequered.messageErrform1">{{dataRequered.messageErrform1}}</div>
 
@@ -100,20 +100,20 @@
                                     <span class="buying-selling-word">$400+</span>
                                 </label>
                                 </div>-->
-                                <div class="form-check form-check-inline" style="margin-left: 31px;">
-                                    <input type="radio" name="testradio" id=""  value="$50-$75" (change)="handleradioform2($event.target.value)"><label for="" style="color: black;margin-left: 10px;margin-top: 11px;">$50-$75</label> 
+                                <div class="form-check form-check-inline inputavrage" style="margin-left: 31px;">
+                                    <input type="radio" name="testradio" id="customRadioInline3"  value="$50-$75" (change)="handleradioform2($event.target.value)"><label for="customRadioInline3" style="color: black;margin-left: 10px;margin-top: 11px;">$50-$75</label> 
                                 </div>
-                                <div class="form-check form-check-inline" style="margin-left: 31px;">
-                                    <input type="radio" name="testradio" id="" value="$75-$150" (change)="handleradioform2($event.target.value)"><label for="" style="color: black;margin-left: 10px;margin-top: 11px;">$75-$150</label> 
+                                <div class="form-check form-check-inline inputavrage" style="margin-left: 31px;">
+                                    <input type="radio" name="testradio" id="customRadioInline4" value="$75-$150" (change)="handleradioform2($event.target.value)"><label for="customRadioInline4" style="color: black;margin-left: 10px;margin-top: 11px;">$75-$150</label> 
                                 </div>
-                                <div class="form-check form-check-inline" style="margin-left: 31px;">
-                                    <input type="radio" name="testradio" id=""  value="$150-$270" (change)="handleradioform2($event.target.value)"><label for="" style="color: black;margin-left: 10px;margin-top: 11px;">$150-$270</label> 
+                                <div class="form-check form-check-inline inputavrage" style="margin-left: 31px;">
+                                    <input type="radio" name="testradio" id="customRadioInline5"  value="$150-$270" (change)="handleradioform2($event.target.value)"><label for="customRadioInline5" style="color: black;margin-left: 10px;margin-top: 11px;">$150-$270</label> 
                                 </div>
-                                <div class="form-check form-check-inline" style="margin-left: 31px;">
-                                    <input type="radio" name="testradio" id="" value="$270-$400" (change)="handleradioform2($event.target.value)"><label for="" style="color: black;margin-left: 10px;margin-top: 11px;">$270-$400</label> 
+                                <div class="form-check form-check-inline inputavrage" style="margin-left: 31px;">
+                                    <input type="radio" name="testradio" id="customRadioInline6" value="$270-$400" (change)="handleradioform2($event.target.value)"><label for="customRadioInline6" style="color: black;margin-left: 10px;margin-top: 11px;">$270-$400</label> 
                                 </div>
-                                <div class="form-check form-check-inline" style="margin-left: 31px;">
-                                    <input type="radio" name="testradio" id="" value="$400+" (change)="handleradioform2($event.target.value)"><label for="" style="color: black;margin-left: 10px;margin-top: 11px;">$400+</label> 
+                                <div class="form-check form-check-inline inputavrage" style="margin-left: 31px;">
+                                    <input type="radio" name="testradio" id="customRadioInline7" value="$400+" (change)="handleradioform2($event.target.value)"><label for="customRadioInline7" style="color: black;margin-left: 10px;margin-top: 11px;">$400+</label> 
                                 </div>
                                 <div class="alert alert-danger" *ngIf="dataRequered.messageErrform2">{{dataRequered.messageErrform2}}</div>
 
@@ -165,17 +165,17 @@
                                     </div>
                                 </div> -->
                                    <!--average start here-->
-                                   <div class="form-check form-check-inline" style="margin-left: 31px;">
-                                    <input type="radio" name="testradio2" id=""  value="Excellent" (change)="handleradioform3($event.target.value)"><label for="" style="color: black;margin-left: 10px;margin-top: 11px;">Excellent</label> 
+                                   <div class="form-check form-check-inline inputscore" style="margin-left: 31px;">
+                                    <input type="radio" name="testradio2" id="customRadioInline8"  value="Excellent" (change)="handleradioform3($event.target.value)"><label for="customRadioInline8" style="color: black;margin-left: 10px;margin-top: 11px;">Excellent</label> 
                                 </div>
-                                <div class="form-check form-check-inline" style="margin-left: 31px;">
-                                    <input type="radio" name="testradio2" id="" value="Above-Average" (change)="handleradioform3($event.target.value)"><label for="" style="color: black;margin-left: 10px;margin-top: 11px;">Above-Average</label> 
+                                <div class="form-check form-check-inline inputscore" style="margin-left: 31px;">
+                                    <input type="radio" name="testradio2" id="customRadioInline9" value="Above-Average" (change)="handleradioform3($event.target.value)"><label for="customRadioInline9" style="color: black;margin-left: 10px;margin-top: 11px;">Above-Average</label> 
                                 </div>
-                                <div class="form-check form-check-inline" style="margin-left: 31px;">
-                                    <input type="radio" name="testradio2" id=""  value="Average" (change)="handleradioform3($event.target.value)"><label for="" style="color: black;margin-left: 10px;margin-top: 11px;">Average</label> 
+                                <div class="form-check form-check-inline inputscore" style="margin-left: 31px;">
+                                    <input type="radio" name="testradio2" id="customRadioInline10"  value="Average" (change)="handleradioform3($event.target.value)"><label for="customRadioInline10" style="color: black;margin-left: 10px;margin-top: 11px;">Average</label> 
                                 </div>
-                                <div class="form-check form-check-inline" style="margin-left: 31px;">
-                                    <input type="radio" name="testradio2" id="" value="Below-Average" (change)="handleradioform3($event.target.value)"><label for="" style="color: black;margin-left: 10px;margin-top: 11px;">Below-Average</label> 
+                                <div class="form-check form-check-inline inputscore" style="margin-left: 31px;">
+                                    <input type="radio" name="testradio2" id="customRadioInline11" value="Below-Average" (change)="handleradioform3($event.target.value)"><label for="customRadioInline11" style="color: black;margin-left: 10px;margin-top: 11px;">Below-Average</label> 
                                 </div>
                                 <div class="alert alert-danger" *ngIf="dataRequered.messageErrform3">{{dataRequered.messageErrform3}}</div>
 

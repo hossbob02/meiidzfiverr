@@ -119,13 +119,12 @@ export class SurveyComponent implements OnInit {
     this.lastname=event
   }
   next4(){
-    if(this.firstname=='')
+    if((this.firstname=='') || (this.lastname==''))
     {
       this.dataRequered.messageErrName='firstName Is Required'
-    }
-    else if(this.lastname==''){
       this.dataRequered.messageErrLast='lastName Is Required'
-    }
+
+    }  
     else{
       this.dataForm.form4='none'
       this.dataForm.form5=''
@@ -174,11 +173,9 @@ export class SurveyComponent implements OnInit {
     this.datasurvey.phone=event
   }
   next7(){
-    if(this.datasurvey.area=='')
+    if((this.datasurvey.area=='') || (this.datasurvey.phone==''))
     {
       this.dataRequered.messageErrArea='Area Code Is Required'
-    }
-    else if(this.datasurvey.phone==''){
       this.dataRequered.messageErrPhone='Phone Is Required'
     }
     else{

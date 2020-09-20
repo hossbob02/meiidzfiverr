@@ -11,7 +11,7 @@ export class NotQualifiedComponent implements OnInit {
 
   isMobileResolution:boolean
   constructor(private rs:ResolutionService,private routes:Router) {
-    if(this.rs.isMobileResolution){
+    if(this.rs.getIsMobileResolution()){
       this.isMobileResolution=true
     }else{
       this.isMobileResolution=false
